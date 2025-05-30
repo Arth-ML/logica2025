@@ -5,17 +5,11 @@ int main(){
     double a, b, MEDIA;
 
     scanf("%lf", &a);
-    scnaf("%lf", &b);
+    scanf("%lf", &b);
 
-    MEDIA = (3.5 * a) * (7.5 *  b) / 2;
+    MEDIA = (a * 3.5 + b * 7.5 )/ 11;
 
     printf("MEDIA = %.5f\n", MEDIA);
-
-
-
-
-
-
 
     return 0;
 }

@@ -3,11 +3,8 @@
 #include <time.h>
 
 int main(){
-    int opcao, opcao2, total;
-
-    printf("\n1 - cachorro Quente\n2 - X-salada\n3 - X-Bacon\n4 - Torrada Simples\n5 - Refrigerente\n");
-    printf("Pedido: ");
-    printf("\nQuantidade: ");
+    int opcao, opcao2;
+    double total;
     scanf("%d", &opcao);
     scanf("%d", &opcao2);
 
@@ -15,8 +12,27 @@ int main(){
     switch(opcao){
         case 1:
             total = 4.00 * opcao2;
-            printf("TOTAL: R$ %d", total);
+            printf("Total: R$ %.2lf", total);
+            break;
+        case 2:
+            total = 4.50 * opcao2;
+            printf("Total: R$ %.2lf\n", total);
+            break;
+        case 3:
+            total = 5.00 * opcao2;
+            printf("Total:  R$ %.2lf\n", total);
+            break;
+        case 4:
+            total = 2.00 * opcao2;
+            printf("Total: R$ %.2lf\n", total);
+            break;
+        case 5:
+            total = 1.50 * opcao2;
+            printf("Total: R$ %.2lf\n", total);
+            break;
     }
+    
+    
     
     return 0;
 }
